@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#F2F2F2;
+}
+.header,.search,.nav,.content,.four,.recommendation{
+    width:1190px;
+    margin: 0 auto;
+}
+.header{
+    height: 35px;
+    background-color: red;
+    overflow:hidden;
+}
+.header .left {
+    width: 43px;
+    height:20px;
+    margin-top: 8px;
+    line-height: 35px;
+}
+.header .left span{
+    font-size: 12px;
+
+}
+
+.search{
+    height:108px;
+    background-color:blue;
+}
+.nav{
+    height: 40px;
+    background-color:yellow;
+}
+.content{
+    height: 460px;
+    background-color:#F2F2F2;
+}
+.content .content_left{
+    width:952px;
+    height:430px;
+    background-color:red;
+    float:left;
+    position: relative;
+    overflow: hidden;
+}
+.content .content_left #banners{
+    width:6700px;
+    height:430px;
+    position:absolute;
+    z-index: 2;
+    clear: right;
+
+}
+.content .content_left #banners li{
+    list-style: none;
+    float: left;
+     width: 952px;
+     height: 430px;
+
+}
+
+.content .content_left #banners img{
+   width: 100%;
+   height: 100%;
+   float: left;
+}
+.content #numofbanner{
+    width:120px;
+    height:20px;
+    background:white;
+    opacity:0.5;
+    border-radius:20px;
+    position:absolute;
+    bottom:8px;
+    left:416px;
+    display:flex;
+    box-sizing: border-box;
+    padding-left:10px;
+    padding-right:10px;
+    justify-content: space-around;
+    align-items: center;
+    z-index:10;
+
+}
+.content #numofbanner .active{
+    background-color:orange;
+}
+.content #numofbanner li{
+    width:12px;
+    height:12px;
+    background:#b6b6b6;
+    border-radius:50%;
+    float: left;
+    list-style:none;
+    cursor:pointer;
+    z-index: 2;
+}
+
+
+.content .content_left #con_ul{
+    position:absolute;
+    width:192px;
+    height: 430px;
+    background-color:rgba(4, 4, 4, 0.6);
+     z-index: 4;
+}
+.content .content_left #con_ul li{
+    width: 192px;
+    list-style: none;
+    height: 36px;
+    line-height: 36px;
+
+}
+.content .content_left #con_ul .con_li{
+    margin-top: 15px;
+}
+
+.content .content_left #con_ul li a{
+    text-decoration: none;
+     color:white;
+     display: inline-block;
+     width: 180px;
+    height: 36px;
+    float: right;
+
+}
+.content .content_left .see{
+    width:444px;
+    height:430px;
+    background-color:#F9A577;
+    position:absolute;
+    left:-253px;
+    display: none;
+    z-index: 3;
+}
+
+.content .content_left #con_ul li a i{
+    float: right;
+    margin-right:10px;
+    color:#C1C1C1;
+}
+.content .content_right{
+    width:230px;
+    height: 430px;
+    float: right;
+    background-color:pink;
+}
+// 轮播图下方的第四部分
+.four{
+    height: 150px;
+    background-color:#F2F2F2;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.four .four_ul{
+    width: 1190px;
+    height: 150px;
+    display: flex;
+    justify-content:space-between;
+
+}
+.four .four_ul li{
+    list-style: none;
+    width: 290px;
+    height: 150px;
+    overflow: hidden;
+    position:relative;
+}
+.four .four_ul li a{
+    display:block;
+}
+.four .four_ul li img{
+     position:absolute;
+     left: 0;
+     top: 0;
+}
+.four .four_ul .m1{
+    margin-left:10px;
+    margin-right:10px;
+}
+.four .four_ul .m2{
+    margin-right: 10px;
+}
+
+// 第五部分精品推荐
+.recommendation{
+    height: 480px;
+}
+.recommendation .top{
+    width: 1190px;
+    height: 60px;
+    background-color:#2979ff;
+    border-radius: 10px 10px 0 0;
+    line-height:60px;
+    box-sizing:border-box;
+    padding:0 18px;
+}
+.recommendation .top i{
+font-size:32px;
+color:white;
+vertical-align: middle;
+
+}
+.recommendation .top span{
+    font-family: Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+    color: white;
+    margin-left: 10px;
+
+}
+.recommendation .bottom{
+    width: 1190px;
+    height:420px;
+    background-color:white;
+    box-sizing:border-box;
+    padding:10px;
+}
+
+.recommendation .bottom .left{
+    width:220px;
+    height: 400px;
+    background-color:pink;
+    float: left;
+    overflow: hidden;
+    position:relative;
+}
+.recommendation .bottom .left img{
+position:absolute;
+}
+
+.recommendation .bottom .right{
+    width:930px;
+    height: 400px;
+    background-color:skyblue;
+    float: right;
+}
+.recommendation .bottom .right  li{
+    width:310px;
+    height:200px;
+    list-style: none;
+    box-sizing:border-box;
+    padding:20px;
+    float: left;
+    border:1px solid red;
+}
+.recommendation .bottom .right  li img{
+    vertical-align: middle;
+}
+
+.recommendation .bottom .right  li a{
+    text-decoration: none;
+}
+
+
