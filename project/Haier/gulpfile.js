@@ -47,6 +47,33 @@ gulp.task("scss-index",function(){
     .pipe(connect.reload());
 })
 
+gulp.task("scss-enter",function(){
+    return gulp.src("scss/enter.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minify())
+    .pipe(rename("enter.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+gulp.task("scss-register",function(){
+    return gulp.src("scss/register.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minify())
+    .pipe(rename("register.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+gulp.task("scss-productlist",function(){
+    return gulp.src("scss/productlist.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minify())
+    .pipe(rename("productlist.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
 
 //拷贝data文件 整理数据源
 
@@ -58,7 +85,7 @@ gulp.task("data",function(){
 
 //上述操作都是整理文件的，作为整体，建立项目的整体，让他们一起来执行
 
-gulp.task("build",["copy-html","images","scripts","data","scss-index","icon"],function(){
+gulp.task("build",["copy-html","images","scripts","data","scss-index","icon","scss-enter","scss-register","scss-productlist"],function(){
     console.log("编译成功");
 })
 
@@ -76,6 +103,9 @@ gulp.task("watch",function(){
     gulp.watch("js/*.js",["scripts"]);
     gulp.watch("data/*.json",["data"]);
     gulp.watch("scss/*.scss",["scss-index"]);
+    gulp.watch("scss/*.scss",["scss-enter"]);
+    gulp.watch("scss/*.scss",["scss-register"]);
+    gulp.watch("scss/*.scss",["scss-productlist"]);
 })
 
 //启动服务器

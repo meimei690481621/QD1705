@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <link rel="stylesheet" href="../css/productlist.min.css">
+     <script type="text/javascript" src="../js/require.js" async = "true" defer data-main = "../js/main"></script>
+</head>
+<body>
+    <!-- 顶部信息部分    第一部分 -->
+        <div class = "header">
+            <div class = "left">
+                <i class = "iconfont icon-dingwei"></i>
+                <span>青岛</span>
+            </div>
+            <ul class = "right">
+                <li><a href="#">我的海尔</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li><a href="#">互动社区</a></li>
+                <li><a href="#">知识堂</a></li>
+                <li><a href="#">海尔官网</a></li>
+                <li><a href="#">顺逛微店</a></li>
+            </ul>
+            <form class = "center">
+                <span>嗨，欢迎来到海儿官方商城 请</span>
+                <a href="login.html"><input type="button" value="登录"/></a>
+                <span><a href="register.html">免费注册</a></span>
+            </form>
+        </div>
+        <!-- 顶部信息下搜索框部分   第二部分 -->
+        <div class = "search">
+            <div class = "left">
+                <img src="../images/logo.png"/>
+                <img src = "../images/5.png"/>
+            </div>
+            <div class = "center">
+                <input id = "search_input" type="text" placeholder = "【十一提前购】"/>
+                <i class = "iconfont icon-sousuo"></i>
+                <p>
+                    <span><a href="#">十一提前购</a></span>
+                    <span><a href="#">智能空调</a></span>
+                    <span><a href="#">冰箱</a></span>
+                    <span><a href="#">智能彩电</a></span>
+                    <span><a href="#">热水器</a></span>
+                    <span><a href="#">滚筒洗衣机</a></span>
+                    <span><a href="#">冷柜</a></span>
+                </p>
+                <ul id = "searchresult">
+                </ul>
+            </div>
+            <div class = "right">
+                <i class = "iconfont icon-gouwuchekong"></i>
+                <span><a href="shoppingcar.html">我的购物车</a></span>
+                <span>0</span>
+            </div>
+            <div id = "ball"></div>
+            <div class = "clearfloat"></div>
+        </div>
+        <!-- 导航栏部分   第三部分 -->
+        <div class = "nav">
+            <div class = "classifyofgoods">
+                <span>商品分类</span>
+                <i class = "iconfont icon-liebiao"></i>
+            </div>
+            <ul id = "optCard">
+            </ul>
+            <ul class = "navcontent">
+                <li><a href="index.html">首页</a></li>
+                <li>
+                    <a href="#">有好货</a>
+                    <i class = "iconfont icon-new1"></i>
+                </li>
+                <li>
+                    <a href="#">抢鲜购</a>
+                    <i class = "iconfont icon-new1"></i>
+                </li>
+                <li><a href="#">定制</a></li>
+                <li>
+                    <a href="#">会员</a>
+                    <i class = "iconfont icon-vip"></i>
+                </li>
+                <li><a href="#">社区</a></li>
+                <li><a href="#">线下体验店</a></li>
+            </ul>
+            <ul id = "optcontent">
+            </ul>
+            <div class = "bottom">
+                <div id = "contentofopt">
+                    <ul class = "left"></ul>
+                    <ul class = "right"></ul>
+                </div>
+            </div>
+            <div class = "clearfloat"></div>
+        </div>
+    <!-- 当前所处的位置 第四部分 -->
+    <div class = "location">
+        <span>您现在所处的位置:</span>
+        <span id = "nowlocation">海尔商城 > 生活家电</span><span class="active">> 厨用小家电</span>
+    </div>
+<!-- 各种商品分类    第五部分-->
+        <div class = "goods">
+            <div class = "left">
+                <div class = "accordion">
+                    <h2>生活家电</h2>
+                    <div class = "content">
+                        <h3 ><b class = "1">厨房小家电</b>
+                            <span class = "iconfont icon-liebiao"></span>
+                            <ul>
+                                <li class = "11">多功能料理机</li>
+                                <li class = "12">破壁机</li>
+                                <li class = "13">榨汁机</li>
+                                <li class = "14">电磁炉</li>
+                                <li class = "15">电饭煲</li>
+                                <li class = "16">电压力锅</li>
+                                <li class = "17">电水壶</li>
+                                <li class = "18">咖啡机</li>
+                                <li class = "19">搅拌机</li>
+                                <li class = "1a">煮蛋器</li>
+                                <li class = "1b">多士炉</li>
+                                <li class = "1c">奶泡机</li>
+                            </ul>
+                        </h3>
+
+                        <h3><b class = "2">生活小家电</b>
+                            <span class = "iconfont icon-liebiao"></span>
+                            <ul>
+                                <li class = "21">电熨斗</li>
+                                <li class = "22">吸尘器</li>
+                                <li class = "23">空气净化器</li>
+                                <li class = "24">电暖器</li>
+                                <li class = "25">除螨仪</li>
+                                <li class = "26">挂烫机</li>
+                            </ul>
+                        </h3>
+
+                        <h3><b class = "3">电风扇</b></h3>
+                        <h3><b class = "4">母婴家电</b>
+                            <span class = "iconfont icon-liebiao"></span>
+                            <ul>
+                                <li class = "41">恒温调奶器</li>
+                                <li class = "42">理发器</li>
+                                <li class = "23">消毒锅</li>
+                            </ul>
+                        </h3>
+                        <h3><b  class = "5">衣物消毒器</b></h3>
+                    </div>
+                </div>
+                <div class = "brand">
+                    <p>
+                        <i class = "iconfont icon-arrfill_l"></i>
+                        品牌
+                    </p>
+                    <form>
+                        <input type="radio" name = "brand"/>
+                        <span>全部品牌</span>
+                        <input type="radio" name = "brand"/>
+                        <span>海尔</span><br/>
+                        <input type="radio" name = "brand"/>
+                        <span>统帅</span>
+                        <input type="radio" name = "brand"/>
+                        <span>小超人</span><br/>
+                        <input type="radio" name = "brand"/>
+                        <span>MOOKA</span>
+                        <input type="radio" name = "brand"/>
+                        <span>海尔施特劳斯</span><br/>
+                        <input type="radio" name = "brand"/>
+                        <span>卡萨帝</span>
+                    </form>
+                </div>
+                <div class = "price">
+                    <p>
+                        <i class = "iconfont icon-arrfill_l"></i>
+                        价格
+                    </p>
+                    <form>
+                        <input type="radio" name = "price"/>
+                        <span>全部</span>
+                        <input type="radio" name = "price"/>
+                        <span>0-1000</span><br/>
+                        <input type="radio" name = "price"/>
+                        <span>1001-2000</span>
+                        <input type="radio" name = "price"/>
+                        <span>2001-4000</span><br/>
+                        <input type="radio" name = "price"/>
+                        <span>4001-6000</span>
+                        <input type="radio" name = "price"/>
+                        <span>6001-10000</span><br/>
+                        <input type="radio" name = "price"/>
+                        <span>10000以上</span><br/>
+                        <input type="text"  class = "priceinput"/>~
+                        <input type="text"  class = "priceinput"/>
+                        <span>搜索</span>
+                    </form>
+                </div>
+                <!-- <ul id = "purchase">
+                    <h3>看过这个页面的用户最终购买</h3>
+                </ul> -->
+                <ul id = "browse">
+                    <h3>根据你的浏览历史猜你喜欢</h3>
+                </ul>
+            </div>
+            <div class = "right">
+                <div class = "suspend">
+                    <span id = "leftsword" class = "iconfont icon-jiantou2"></span>
+                    <span class = "sortname">排序:</span>
+                    <div class = "sort">
+                        <span>热销</span>
+                        <span>价格</span>
+                        <span>热评</span>
+                        <span>新品</span>
+                        <input type="checkbox" class = "checkall"/>
+                        <b>仅显示有货</b>
+                    </div>
+                    <div class = "orientation">
+                        <span>山东青岛</span>
+                        <i class = "iconfont icon-jiantou-copy"></i>
+                        <div>
+                            <span>共</span>
+                            <span id ="countnum">0</span>
+                            <span id = "clicktitle">生活家电</span>
+                        </div>
+                    </div>
+                </div>
+                <ul id = "goodlist">
+                <!-- <li><img src="../images/7.png" alt="我是图片"><p>Haier/海尔 生活家电 儿童多功能辅食料理机HYF-P0101</p><span>￥499</span><i>有货</i><button>比较</button></li>
+                <li><img src="../images/7.png" alt="我是图片"><p>Haier/海尔 生活家电 儿童多功能辅食料理机HYF-P0101</p><span>￥499</span><i>有货</i><button>比较</button></li>
+                <li><img src="../images/7.png" alt="我是图片"><p>Haier/海尔 生活家电 儿童多功能辅食料理机HYF-P0101</p><span>￥499</span><i>有货</i><button>比较</button></li> -->
+                </ul>
+            </div>
+        </div>
+        <!-- 底部四大保证及五大优势  第十一部分 -->
+        <div class = "guarantee">
+            <div class = "thinborder">
+                <ul class = "top">
+                    <li>
+                        <i class = "iconfont icon-xiaoshi"></i>
+                        <p>24小时限时达
+                            <span>全国1300县支持24小时内送货上门</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i class = "iconfont icon-mian"></i>
+                        <p>按时送达 超时免单
+                            <span>全国1081个县支持按约送达 超时免单</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i class = "iconfont icon-qian"></i>
+                        <p>7天包退换
+                            <span>产品售出7日内可免费退换货</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i class = "iconfont icon-tongburizhi"></i>
+                        <p>货到付款
+                            <span>全国2076个区县支持货到付款</span>
+                        </p>
+                    </li>
+                </ul>
+                <ul class = "bottom">
+                    <li>
+                        <span>购物指南</span>
+                        <ul class ="clause">
+                            <li><a href="#">注册登录</a></li>
+                            <li><a href="#">密码相关</a></li>
+                            <li><a href="#">购物流程</a></li>
+                            <li><a href="#">交易条款</a></li>
+                            <li><a href="#">品牌大全</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>支付方式</span>
+                        <ul class ="clause">
+                            <li><a href="#">货到付款</a></li>
+                            <li><a href="#">网银支付</a></li>
+                            <li><a href="#">发票说明</a></li>
+                            <li><a href="#">电子发票</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>物流配送</span>
+                        <ul class ="clause">
+                            <li><a href="#">日日顺配送</a></li>
+                            <li><a href="#">配送服务查询</a></li>
+                            <li><a href="#">全场免运费</a></li>
+                            <li><a href="#">送装同步</a></li>
+                            <li><a href="#">送货入户 违约赔付</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>售后服务</span>
+                        <ul class ="clause">
+                            <li><a href="#">售后服务政策</a></li>
+                            <li><a href="#">退换货说明</a></li>
+                            <li><a href="#">安装/维修</a></li>
+                            <li><a href="#">服务时效承诺</a></li>
+                            <li><a href="#">咨询投诉</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>特色服务</span>
+                        <ul class ="clause">
+                            <li><a href="#">价格保护</a></li>
+                            <li><a href="#">延迟发货赔付</a></li>
+                            <li><a href="#">按约送达 超时免单</a></li>
+                            <li><a href="#">24小时限时达</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class = "customerservice">
+                    <i class = "iconfont icon-kefu-copy"></i>
+                    <span>在线客服</span>
+                </div>
+            </div>
+        </div>
+        <!--  <div class="enter_bottom">
+         <div class="bottom">
+            <a href="http://www.haier.com/cn/about_haier/">关于海尔</a>
+            <span class="links-ver"></span>
+            <a href="http://www.ehaier.com/helpcenter.php?id=35" target="_blank">售后服务</a>
+            <span class="links-ver"></span>
+            <a href="#" class="a-openKF">投诉建议</a>
+            <span class="links-ver"></span>
+            <a href="http://www.ehaier.com/links/friendssite.html" target="_blank">友情链接</a>
+            <span class="links-ver"></span>
+            <a href="http://www.ehaier.com/helpcenter.php?id=50" target="_blank">联系我们</a>
+        </div>
+
+        <p class="">网站备案/许可证号：鲁ICP备09096283号</p>
+        <p class="">Copyright©2000-2017 海尔集团电子商务有限公司 All Rights Reserved</p>
+
+
+         <p class="p-all-honor">
+            <a rel="nofollow" ref="ixv5-9-9ft-5-0" href="http://www.miitbeian.gov.cn" target="_blank">
+                <img width="108" height="40" alt="" src="http://cdn02.ehaier.com/image/50c6c153a103a74d19000040.png">
+            </a>
+            <img width="122" height="40" alt="" src="http://cdn02.ehaier.com/image/50c6c153a103a74d19000041.png">
+            <a rel="nofollow" ref="ixv5-9-9ft-5-1" href="http://search.cxwz.org/cert/l/CX20111018000610000615" target="_blank">
+                <img width="112" height="40" alt="" src="http://cdn02.ehaier.com/image/50c6c153a103a74d19000042.png">
+            </a>
+            <a rel="nofollow" ref="ixv5-9-9ft-5-2" href="http://cdn09.ehaier.com/v5/images/yingyezhizhao.png" target="_blank">
+                <img width="141" height="40" alt="" src="http://cdn02.ehaier.com/image/50c6c153a103a74d19000044.png">
+            </a>
+
+            <a rel="nofollow" ref="ixv5-9-9ft-5-5" href="https://ss.knet.cn/verifyseal.dll?sn=2009082500100000513&amp;ct=df&amp;a=1&amp;pa=0.3602663427591324" target="_blank">
+                <img width="108" height="40" alt="可信网站身份验证" src="http://cdn09.ehaier.com/v5/images/cnnic.png">
+            </a>
+            <a rel="nofollow" ref="ixv5-9-9ft-5-6" href="http://si.trustutn.org/info?sn=933161205025927562850&amp;certType=1?ebi=ref-ixv5-9-9ft-5-4" target="_blank">
+                <img width="107" height="40" alt="品牌官网" src="http://v.trustutn.org/images/cert/brand_bottom_large.jpg">
+            </a>
+            <a rel="nofollow" ref="ixv5-9-9ft-5-7" href="http://www.itrust.org.cn/home/index/wx_certifi/wm/WX2017011201" target="_blank">
+                <img width="109" height="40" alt="海尔商城-官网认证结果及安装电子标识" src="http://cdn09.ehaier.com/v5/images/rz.jpg">
+            </a>
+        </p>
+
+        </div> -->
+</body>
+</html>

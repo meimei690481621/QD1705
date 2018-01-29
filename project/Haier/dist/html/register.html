@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.min.css">
+    <link rel="stylesheet" href="../icon/iconfont3.css">
+    <script type="text/javascript" src  ="../js/jquery-1.11.3.js"></script>
+    <script src = "../js/register.js"></script>
+    <!-- <script src="../js/tool.js"></script> -->
+</head>
+<body>
+<div class="header">
+        <p class="p1"></p>
+        <p class="p2"><img src="../images/5.png" alt="我是图片"></p>
+        <p class="p3">注册顺逛商城</p>
+        <p class="p4"><a href="#">已有海尔商城账号登陆 > </a></p>
+</div>
+<!-- 第二部分 -->
+<div class="process-logo">
+    <div class="part">
+        <div class="first">
+            <i>1</i>
+            <span>账户设置</span>
+        </div>
+         <div class="second">
+            <i>2</i>
+            <span>密码设置</span>
+        </div>
+         <div class="three">
+            <i>3</i>
+            <span>注册成功</span>
+        </div>
+        <div class="four">用户注册</div>
+        <div class="line"></div>
+        <div class="five">微店主注册</div>
+    </div>
+</div>
+<!-- 第三部分login -->
+<div class="login">
+<form class="left">
+<!-- 手机号验证 -->
+<div class="div1">
+    <span class="title1">手机号码</span>
+    <input type="text" id="phonenumber" placeholder="请输入手机号码">
+    <p class="warning7">
+        <i class = "iconfont icon-jinggao"></i>
+        <span class="warningcontent">请输入手机号码</span>
+    </p>
+    </div>
+    <!-- 验证码 -->
+    <div class="div2">
+    <span class="title2">验证码</span>
+    <div class="verify">
+    <input type="text" id="yanzheng" class="yan">
+    <div id="security"></div>
+    </div>
+    <p class="warning8">
+         <i class = "iconfont icon-jinggao"></i>
+         <span class="warningcontent1">请输入验证码</span>
+    </p>
+    </div>
+    <!-- 手机验证码 -->
+    <div class="div3">
+    <span class="title3">手机验证码</span>
+    <div class="phoneverify">
+    <input type="text" id="yanzheng1" class="zheng">
+    <div class="sendnum">发送验证码</div>
+    </div>
+    <p class="warning9">
+         <i class = "iconfont icon-jinggao"></i>
+         <span class="warningcontent2">手机验证码错误</span>
+    </p>
+    </div>
+    <input class = "choose" type="checkbox" name="admit">
+                    <a href="#">我已阅读并同意《海尔商城用户服务协议》</a>
+
+                    <br/>
+                    <span class = "chooseone">手机</span>
+                    <span class = "chooseone">邮箱</span><br/>
+                    <input type="text" value = "下一步"/ id = "nextstep">
+                </form>
+                <form class = "leftone">
+                    <p>*密码为数字、字母、特殊符号的组合，长度6位~16位(字母区分大小写)</p>
+                    <span class = "title1">登录密码</span>
+                    <input id ="loginnumber" type="password" placeholder = "6~16位密码包含大小写字母和数字"/>
+                    <b class = "warning2">
+                        <i class = "iconfont icon-jinggao"></i>
+                        <span class = "warningcontent6">密码不可以为空</span>
+                    </b>
+                    <br/>
+                    <div class = "intension">
+                        <strong>弱</strong>
+                        <strong>中</strong>
+                        <strong>强</strong><br/>
+                    </div>
+                    <span class = "title2">确认密码</span>
+                    <input id ="confirmnunber" type="password" placeholder = "请再次输入登录密码"/>
+                    <b class = "warning3">
+                        <i class = "iconfont icon-jinggao"></i>
+                        <span class = "warningcontent3">输入错误</span>
+                    </b><br/>
+                    <input type="text" value = "完成"/ id = "nextstepone">
+                </form>
+                <form class = "lefttwo">
+                    <p>恭喜您注册成功，快快进入商城赚取佣金吧。</p>
+                    <a href="index.html"><input type="text" value = "进入商城" /></a>
+                    <input type="text" value = "继续升级" class = "continuetoleval" />
+                </form>
+<div class = "right">
+                    <h3>什么是顺逛微店主?</h3>
+                    <p>顺逛是海尔集团旗下官方微店平台。旨在精选各行业优质品牌及商家资源，甄选精品和爆品，为微店主搭建专属的“0成本创业平台”,提供自主创业良机，实现微店主、品牌商、平台多方共创共赢。</p>
+                    <h3>顺逛微店主有哪些特权</h3>
+                    <ul>
+                        <li>创业0风险</li>
+                        <li>产品保障</li>
+                        <li>物流保障(免运费、按约送达、免费安装、体验满意后再付款、15天无理由退货)</li>
+                        <li>售后保障</li>
+                        <li>专业免费培训</li>
+                        <li>品牌授权</li>
+                    </ul>
+                    <a href="#">查看更多>></a>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- 第四部分也是最后一部分关于海尔售后服务等 -->
+ <div class="enter_bottom">
+         <div class="bottom">
+            <a href="http://www.haier.com/cn/about_haier/">关于海尔</a>
+            <span class="links-ver"></span>
+            <a href="http://www.ehaier.com/helpcenter.php?id=35" target="_blank">售后服务</a>
+            <span class="links-ver"></span>
+            <a href="#" class="a-openKF">投诉建议</a>
+            <span class="links-ver"></span>
+            <a href="http://www.ehaier.com/links/friendssite.html" target="_blank">友情链接</a>
+            <span class="links-ver"></span>
+            <a href="http://www.ehaier.com/helpcenter.php?id=50" target="_blank">联系我们</a>
+        </div>
+
+        <p class="">网站备案/许可证号：鲁ICP备09096283号</p>
+        <p class="">Copyright©2000-2017 海尔集团电子商务有限公司 All Rights Reserved</p>
+
+
+         <p class="p-all-honor">
+            <a rel="nofollow" ref="ixv5-9-9ft-5-0" href="http://www.miitbeian.gov.cn" target="_blank">
+                <img width="108" height="40" alt="" src="http://cdn02.ehaier.com/image/50c6c153a103a74d19000040.png">
+            </a>
+            <img width="122" height="40" alt="" src="http://cdn02.ehaier.com/image/50c6c153a103a74d19000041.png">
+            <a rel="nofollow" ref="ixv5-9-9ft-5-1" href="http://search.cxwz.org/cert/l/CX20111018000610000615" target="_blank">
+                <img width="112" height="40" alt="" src="http://cdn02.ehaier.com/image/50c6c153a103a74d19000042.png">
+            </a>
+            <a rel="nofollow" ref="ixv5-9-9ft-5-2" href="http://cdn09.ehaier.com/v5/images/yingyezhizhao.png" target="_blank">
+                <img width="141" height="40" alt="" src="http://cdn02.ehaier.com/image/50c6c153a103a74d19000044.png">
+            </a>
+            <!--<a rel="nofollow" ref="ixv5-9-9ft-5-3" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1718044694" target="_blank"><img width="124" height="40" alt="中国信用企业" src="http://cdn09.ehaier.com/v5/images/blank.png" src2="http://cdn02.ehaier.com/image/50f7b61ce48435121700008e.jpg" /></a>-->
+            <a rel="nofollow" ref="ixv5-9-9ft-5-5" href="https://ss.knet.cn/verifyseal.dll?sn=2009082500100000513&amp;ct=df&amp;a=1&amp;pa=0.3602663427591324" target="_blank">
+                <img width="108" height="40" alt="可信网站身份验证" src="http://cdn09.ehaier.com/v5/images/cnnic.png">
+            </a>
+            <a rel="nofollow" ref="ixv5-9-9ft-5-6" href="http://si.trustutn.org/info?sn=933161205025927562850&amp;certType=1?ebi=ref-ixv5-9-9ft-5-4" target="_blank">
+                <img width="107" height="40" alt="品牌官网" src="http://v.trustutn.org/images/cert/brand_bottom_large.jpg">
+            </a>
+            <a rel="nofollow" ref="ixv5-9-9ft-5-7" href="http://www.itrust.org.cn/home/index/wx_certifi/wm/WX2017011201" target="_blank">
+                <img width="109" height="40" alt="海尔商城-官网认证结果及安装电子标识" src="http://cdn09.ehaier.com/v5/images/rz.jpg">
+            </a>
+        </p>
+
+        </div>
+</body>
+</html>

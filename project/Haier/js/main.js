@@ -34,7 +34,20 @@ require(["index"], function(index){
     console.log(index.main());
 })
 
+//要去调用enter.js中的main
+require(["enter"], function(enter){
+    console.log(enter.enter());
+})
 
+//要去调用register.js中的main
+require(["register"], function(register){
+    console.log(register.register());
+})
+
+// //要去调用register.js中的main
+require(["productlist"], function(productlist){
+    console.log(productlist.productlist());
+})
 
 
 
